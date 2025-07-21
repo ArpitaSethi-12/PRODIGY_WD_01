@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Landing Page</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Logo Here</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header id="navbar">
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="container">
+            <div class="logo">Prodigy InfoTech</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="home">
-    <h1>Welcome to Our Landing Page</h1>
-  </section>
+    <main class="container">
+        <div class="main-content">
+            <section class="contact-section">
+                <h1>CONTACT US</h1>
+                <p>Welcome to our landing page! Please fill the following to let us know your concern. </p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">SEND</button>
+                </form>
+            </section>
 
-  <section id="features">
-    <h2>Features</h2>
-    <p>Our product offers a variety of features that will benefit you.</p>
-  </section>
+            <section class="illustration-section">
+                <div class="illustration">
+                    <div class="bg-circle large"></div>
+                    
+                    <div class="geometric-shapes">
+                        <div class="triangle blue-1"></div>
+                        <div class="triangle blue-2"></div>
+                        <div class="triangle navy"></div>
+                    </div>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Learn more about our team and mission.</p>
-  </section>
+                    <div class="character">
+                        <div class="character-hair"></div>
+                        <div class="character-head">
+                            <div class="character-face">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="cheek left"></div>
+                                <div class="cheek right"></div>
+                                <div class="mouth"></div>
+                            </div>
+                        </div>
+                        <div class="character-body">
+                            <div class="arms">
+                                <div class="arm left"></div>
+                                <div class="arm right"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-icons">
+                            <div class="contact-icon phone">📞</div>
+                            <div class="contact-icon email">📧</div>
+                            <div class="contact-icon web">🌐</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Get in touch for more information.</p>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
